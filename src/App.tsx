@@ -1,5 +1,7 @@
+import Router from './shared/Router';
+
 function App() {
-  return <div className="text-orientalBlue font-impact">Hello</div>;
+  return <Router />;
 }
 
 export default App;

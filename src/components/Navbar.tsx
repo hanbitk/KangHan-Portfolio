@@ -1,14 +1,23 @@
 import { useNavigate } from 'react-router-dom';
+import { TABS } from '../utils/constants';
 
 const Navbar = () => {
   const navigate = useNavigate();
+
   return (
-    <div className="border">
-      <p onClick={() => navigate('/')}>logo</p>
-      <ul className="flex flex-row">
-        <li onClick={() => navigate('/about')}>About</li>
-        <li onClick={() => navigate('/projects')}>Projects</li>
-        <li onClick={() => navigate('/contact')}>Contact</li>
+    <div className="w-80">
+      <ul className="flex justify-between items-center text-xl cursor-pointer">
+        {TABS.map((tab, idx) => {
+          return (
+            <li
+              key={idx}
+              className="hover:text-orientalBlue hover:line-through"
+              onClick={() => navigate(`${tab.path}`)}
+            >
+              {tab.title}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

@@ -11,6 +11,9 @@ module.exports = {
       impact: ['impact'],
       helveticaNeue: ['Helvetica Neue'],
     },
+    letterSpacing: {
+      wider: '.07em',
+    },
     extend: {},
   },
   plugins: [],

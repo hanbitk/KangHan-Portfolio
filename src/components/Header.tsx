@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from './Navbar';
 import darkIcon from '../assets/header/dark.svg';
 import { useNavigate } from 'react-router-dom';
@@ -6,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <header className="w-full h-14 border-b-2 border-orientalBlue flex justify-between items-center px-5 py-4">
+    <header className="w-full h-14 border-b-2 border-orientalBlue flex justify-between items-center px-5 py-4 fixed top-0">
       <div className="w-1/3 flex justify-between items-center">
         {/* Logo */}
         <h2

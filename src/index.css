@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+  @apply w-full max-w-screen-2xl;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +13,8 @@
   font-family: 'Helvetica';
   color: #373737;
   background-color: #e3dcdc;
+}
+
+body {
+  @apply flex flex-col items-center;
 }

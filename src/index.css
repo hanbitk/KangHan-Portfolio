@@ -2,19 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
-  @apply w-full max-w-screen-2xl;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Helvetica';
-  color: #373737;
-  background-color: #e3dcdc;
 }
 
 body {
+  font-family: 'Helvetica';
   @apply flex flex-col items-center;
+  @apply bg-lightGray text-lightBlack;
+}
+
+#root {
+  @apply w-full max-w-screen-2xl;
 }

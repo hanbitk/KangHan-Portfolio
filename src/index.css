@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+  @apply w-full max-w-screen-2xl;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +18,6 @@ body {
   @apply bg-lightGray text-lightBlack;
 }
 
-#root {
-  @apply w-full max-w-screen-2xl;
+.swiper .swiper-wrapper {
+  height: 60%;
 }

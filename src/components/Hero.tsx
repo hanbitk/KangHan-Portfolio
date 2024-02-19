@@ -3,7 +3,7 @@ import hanbit from '../assets/hero/Hanbit_Title.png';
 const Hero = () => {
   return (
     <div className="w-full h-full flex flex-col justify-between">
-      <div className="h-36 flex flex-col justify-between mt-6 px-5">
+      <div className="border h-36 flex flex-col justify-between mt-6 px-5">
         <h1 className="text-5xl font-bold">A Front End Developer for you</h1>
         <p className="text-3xl w-1/2">
           Currently living in South Korea and I’m looking for opportunities to
